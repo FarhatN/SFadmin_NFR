@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: yes
+
+- name: Применение роли zabbix
+  hosts: all
+  roles:
+          - role: zabbix
+
